@@ -7,7 +7,7 @@ RUN apt-get update && \
     curl \
     procps \
     mosquitto-clients && \
-    wget https://raw.githubusercontent.com/savatier/docker-fr24feed-piaware-dump1090/main/mqtt-publisher.sh -O /opt/mqtt_publisher.sh && \
+    wget https://raw.githubusercontent.com/savatier/fr24feed-piaware/main/mqtt-publisher.sh -O /opt/mqtt_publisher.sh && \
     chmod +x /opt/mqtt_publisher.sh
 
 ENTRYPOINT ["/init"]
