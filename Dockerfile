@@ -11,3 +11,5 @@ RUN apt-get update && \
     chmod +x /opt/mqtt_publisher.sh
 
 ENTRYPOINT ["/init"]
+
+CMD ["/opt/mqtt_publisher.sh"]
